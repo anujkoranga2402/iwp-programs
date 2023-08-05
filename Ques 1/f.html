@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Expiring and Refreshing Page</title>
+  		<script>
+			//on page load, call functions to expire the page content after 3 seconds and refresh page after 5 more seconds
+    		window.addEventListener("load", function() 
+			{
+				setTimeout(function()
+				{
+					document.body.innerHTML = "Page Content Expired";
+					setTimeout(function()
+					{
+        				alert('The page has expired. Please refresh.');
+					}, 100);
+      			}, 3000);
+
+				setTimeout(function()
+				{
+					window.location.reload();
+				}, 8000);
+			});
+  		</script>
+	</head>
+	
+	<body>
+  		<pre>This page expires in 3 seconds and refreshes in 5 more seconds.</pre>
+	</body>
+</html>

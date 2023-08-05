@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Expires" content="0"/>
+		<title>Ques 5 Tables</title>
+		<style>
+			.table1 th
+			{
+				border-spacing: 2px;
+				border: 2px inset;
+			}
+			.table1 td
+			{
+				border-spacing: 2px;
+				border: 2px inset;
+			}
+			.table1 table
+			{
+				empty-cells: hide;
+				border: 4px outset;
+				border-spacing: 4px;
+			}
+			.table2 th
+			{
+				border-collapse: collapse;
+				border: 4px ridge;
+				border-spacing: 0;
+				padding: 10px;
+				padding-bottom: 20px;
+			}
+			.table2 td
+			{
+				width: 110px;
+				border-collapse: collapse;
+				border: 4px ridge;
+				border-spacing: 0;
+				padding: 10px;
+			}
+			.table2 td[rowspan]
+			{
+				vertical-align: top;
+				text-align: left;
+			}
+			.table2 table
+			{
+				empty-cells: hide;
+				border-collapse: collapse;
+				border: 4px ridge;
+				border-spacing: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="table1">
+			<table>
+				<tr>
+					<th colspan="4">Purchased Equipment (June, 2006)</th>
+				</tr>
+				<tr>
+					<th rowspan="2">Item Num#</th>
+					<th rowspan="2">Item Picture</th>
+					<th>Item Description</th>
+					<th>Price</th>
+				</tr>
+				<tr>
+					<th>Shipping, Handling, Installation, etc</th>
+					<th>Expense</th>
+				</tr>
+				<tr>
+					<td rowspan="2">1.</td>
+					<td rowspan="2"><img src="pc.png" alt="PC"></td>
+					<td>IBM Clone Computer</td>
+					<td>$ 400.00</td>
+				</tr>
+				<tr>
+					<td>Shipping, Handling, Installation, etc</td>
+					<td>$ 20.00</td>
+				</tr>
+				<tr>
+					<td rowspan="2">2.</td>
+					<td rowspan="2"><img src="ram.png" alt="RAM"></td>
+					<td>1GB RAM Module for Computer</td>
+					<td>$ 50.00</td>
+				</tr>
+				<tr>
+					<td>Shipping, Handling, Installation, etc</td>
+					<td>$ 14.00</td>
+				</tr>
+				<tr>
+					<th colspan="4">Purchased Equipment (June, 2006)</th>
+				</tr>
+			</table>
+		</div>
+		<br><br>
+		<div class="table2">
+			<table>
+				<tr>
+					<th colspan="4">Table Heading Cell Spanning 4 Columns</th>
+				</tr>
+				<tr>
+					<td>Normal cell</td>
+					<td colspan="2">Cell spanning 2 columns</td>
+					<td>Normal cell</td>
+				</tr>
+				<tr>
+					<td style="background-color: gray;" rowspan="3">Cell spanning 3 rows with a gray (US spelling) background</td>
+					<td>Normal cell</td>
+					<td>Normal cell</td>
+					<td>Normal cell</td>
+				</tr>
+				<tr>
+					<td>Normal cell</td>
+					<td rowspan="2" colspan="2">Cell spanning 2 rows and 2 columns</td>
+				</tr>
+				<tr>
+					<td>Normal cell</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

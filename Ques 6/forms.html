@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Expires" content="0"/>
+		<title>Ques 6 Forms</title>
+		<style>
+			.form1 th
+			{
+				padding: 5px;
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			.form1 td
+			{
+				padding: 5px;
+				border-spacing: 0;
+			}
+			.form1 table
+			{
+				empty-cells: hide;
+				border-collapse: collapse;
+				border: 2px solid;
+				background-color: #f0f0f0;
+			}
+			.form2 th
+			{
+				border-spacing: 2px;
+				border: 2px inset;
+			}
+			.form2 td
+			{
+				border-spacing: 2px;
+				border: 2px inset;
+			}
+			.form2 table
+			{
+				empty-cells: hide;
+				border: 2px outset;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="form1">
+			<table>
+				<form>
+					<tr style="background-color: lightgray; text-align: right;">
+						<th style="width: 180px;"></th>
+						<th style="padding-right: 30px; width: 200px;">The World of Fruit</th>
+					</tr>
+					<tr>
+						<th></th>
+						<th style="padding-left: 40px;">Fruit Survey</th>
+					</tr>
+					<tr>
+						<td style="text-align: right;">
+							<label for="name">Name</label>
+						</td>
+						<td>
+							<input type="text" name="name" id="name" width="110px">
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: right;">
+							<label for="addr">Address</label>
+						</td>
+						<td>
+							<input type="text" name="addr" id="addr" width="110px">
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: right;">
+							<label for="email">Email</label>
+						</td>
+						<td>
+							<input type="email" name="email" id="email" width="110px">
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top; text-align: right;">
+							<label>How many pieces of fruit do you eat per day?</label>
+						</td>
+						<td>
+							<input type="radio" name="quantity" id="radio0" value="0">
+							<label for="radio0">0</label><br>
+							<input type="radio" name="quantity" id="radio1" value="1">
+							<label for="radio1">1</label><br>
+							<input type="radio" name="quantity" id="radio2" value="2">
+							<label for="radio0">2</label><br>
+							<input type="radio" name="quantity" id="radio3" value="3">
+							<label for="radio3">More than 2</label>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top; text-align: right;">
+							<label for="fruits">My favourite fruit</label>
+						</td>
+						<td>
+							<select name="fruits" id="fruits" multiple>
+								<option value="app">Apple</option>
+								<option value="ban">Banana</option>
+								<option value="plu">Plum</option>
+								<option value="pom">Pomegranate</option>
+								<option value="gua">Guava</option>
+								<option value="man">Mango</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: right; padding-left: 10px;">
+							<label for="brochure">Would you like a brochure?</label>
+						</td>
+						<td>
+							<input type="checkbox" name="brochure" id="brochure" value="yes">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" name="submit" id="submit" value="Submit">
+							<br><br>
+						</td>
+					</tr>
+				</form>
+			</table>
+		</div>
+		<br><br>
+		<div class="form2">
+			<table>
+				<form>
+					<tr>
+						<th colspan="2">Pizza Shop 2.0</th>
+					</tr>
+					<tr>
+						<td><label for="name1">Name</label></td>
+						<td><input type="text" name="name" id="name1"></td>
+					</tr>
+					<tr>
+						<td><label>Pizza Topping</label></td>
+						<td>
+							<input type="radio" name="radiosup" id="radiosup" value="sup">
+							<label for="radiosup">Supreme</label><br>
+							<input type="radio" name="radioveg" id="radioveg" value="veg">
+							<label for="radioveg">Vegetarian</label><br>
+							<input type="radio" name="radiohaw" id="radiohaw" value="haw">
+							<label for="radiohaw">Hawaiian</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="sauce">Pizza Sauce</label></td>
+						<td>
+							<select name="sauce" id="sauce">
+								<option value="tom" selected>Tomato</option>
+								<option value="chi">Green Chilli</option>
+								<option value="sch">Schezwan</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Optional Extras</label></td>
+						<td>
+							<input type="checkbox" name="excheese" id="excheese" value="ech">
+							<label for="excheese">Extra Cheese</label>
+							<input type="checkbox" name="glufree" id="glufree" value="gfr">
+							<label for="glufree">Gluten Free Base</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label for="instr">Delivery Instructions:</label><br>
+							<textarea name="instr" id="instr" cols="55"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="submit" name="submit" id="submit1" value="Send my Order">
+						</td>
+					</tr>
+				</form>
+			</table>
+		</div>
+	</body>
+</html>

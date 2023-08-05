@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Validation 22MCA0125</title>
+		<link rel="stylesheet" href="form-style.css" />
+		<script src="validator.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>PAT REGISTRATION FORM</h1>
+			<form name="form" onsubmit="return validateForm()">
+				<table>
+					<tr>
+						<td class="label">Name:</td>
+						<td>
+							<input type="text" name="name" id="name" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Register No:</td>
+						<td>
+							<input type="text" name="regno" id="regno" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Password:</td>
+						<td>
+							<input
+								type="password"
+								name="password"
+								id="password"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Confirm Password:</td>
+						<td>
+							<input
+								type="password"
+								name="confirmpw"
+								id="confirmpw"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">DOB:</td>
+						<td>
+							<input
+								type="text"
+								name="dob"
+								id="dob"
+								placeholder="dd/mm/yy"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Age:</td>
+						<td>
+							<input type="number" name="age" id="age" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Gender:</td>
+						<td>
+							<input
+								type="radio"
+								name="gender"
+								value="Male"
+								id="gender"
+							/>Male
+							<input
+								type="radio"
+								name="gender"
+								value="Female"
+								id="gender"
+							/>Female
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Programme:</td>
+						<td>
+							<input type="text" name="prog" id="prog" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Year:</td>
+						<td>
+							<select name="year" id="year">
+								<option value="">Select</option>
+								<option value="1">1st</option>
+								<option value="2">2nd</option>
+								<option value="3">3rd</option>
+								<option value="4">4th</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Semester:</td>
+						<td>
+							<select name="sem" id="sem">
+								<option value="">Select</option>
+								<option value="1">I</option>
+								<option value="2">II</option>
+								<option value="3">III</option>
+								<option value="4">IV</option>
+								<option value="5">V</option>
+								<option value="6">VI</option>
+								<option value="7">VII</option>
+								<option value="8">VIII</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Email:</td>
+						<td><input type="text" name="email" id="email" /></td>
+					</tr>
+					<tr>
+						<td class="label">Area of Interest:</td>
+						<td>
+							<textarea name="area" id="area" rows="5"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">CGPA:</td>
+						<td>
+							<input
+								type="number"
+								name="cgpa"
+								id="cgpa"
+								min="1"
+								max="10"
+								step="0.0001"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="submit">
+							<input
+								type="submit"
+								value="Submit"
+								class="submitbutton"
+							/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

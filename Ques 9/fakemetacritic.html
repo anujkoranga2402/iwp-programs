@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Expires" content="0" />
+		<title>www.metacritic.com</title>
+		<style>
+			body {
+				background-color: gray;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.main_box {
+				width: 80%;
+				background-color: white;
+				margin-top: 10px;
+				display: flex;
+				flex-direction: column;
+				padding: 20px;
+			}
+
+			.review {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				width: 60%;
+			}
+
+			.menu {
+				list-style-type: none;
+				margin-top: 10px;
+				margin-left: -1.2em;
+			}
+
+			.menu li {
+				list-style: none;
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding-left: 20px;
+				padding-right: 20px;
+				border-right: 2px;
+				text-decoration: none;
+				background-color: #111;
+			}
+
+			.rating {
+				width: 50px;
+				height: 65px;
+				background-color: green;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				font-family: "Times New Roman", Times, serif;
+				font-size: 30pt;
+				padding: 20px;
+				margin: 5px;
+				transform: translateY(-40%);
+			}
+
+			.info li {
+				width: 400px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main_box">
+			<h1 style="text-align: center">WALL-E</h1>
+			<span style="padding: 20px"> Walt Disney Studios Motion Pictures | Release Date : Jan 27,2008 </span>
+			<ul class="menu">
+				<li>Summary</li>
+				<li>Critic Reviews</li>
+				<li>User Reviews</li>
+				<li>Details and Credits</li>
+				<li>Trailers and Videos</li>
+			</ul>
+			<div class="review">
+				<div>
+					<img src="walle.jpeg" alt="" width="150px" height="200px" />
+				</div>
+				<div class="rating">94</div>
+				<div class="info">
+					<h2>Metascore</h2>
+					<p>
+						Universal Acclaim <br />
+						based on 39 Critics
+					</p>
+					<ul>
+						<li>Starring: Ben Burtt, Elissa Knight, Jeff Garlim</li>
+						<li>
+							Summary: After hundreds of lonely years of doing what he was built for, Wall-E discovers a
+							new purpose in life when he meets a sleek search robot named EVE. [Walt Disney Pictures]
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

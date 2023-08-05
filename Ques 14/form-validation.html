@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Validation Ques 14</title>
+		<link rel="stylesheet" href="form-style.css" />
+		<script src="validator.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>STUDENT REGISTRATION FORM</h1>
+			<form name="form" onsubmit="return validateForm()">
+				<table>
+					<tr>
+						<td class="label">Name:</td>
+						<td>
+							<input type="text" name="name" id="name" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Email:</td>
+						<td>
+							<input type="text" name="email" id="email" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Password:</td>
+						<td>
+							<input type="password" name="password" id="password" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">Phone Number:</td>
+						<td>
+							<input type="text" name="phone" id="phone" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="submit">
+							<input type="submit" value="Submit" class="submitbutton" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

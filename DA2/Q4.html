@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Expires" content="0"/>
+		<title>22MCA0125 DA2 Q4</title>
+	</head>
+
+	<body>
+		<h1 style="color: red;"><img src="man.png" alt="MAN">Employee Registration Form</h1>
+		<table>
+			<form>
+				<tr>
+					<td></td>
+					<td>
+						<input type="radio" name="title" id="titlemr" value="mr" checked>
+						<label for="titlemr">Mr.</label>
+						<input type="radio" name="title" id="titlemrs" value="mrs">
+						<label for="titlemrs">Mrs.</label>
+						<input type="radio" name="title" id="titlems" value="ms">
+						<label for="titlems">Ms.</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="fname">First Name</label></td>
+					<td><input type="text" name="fname" id="fname" placeholder="First Name" required></td>
+				</tr>
+				<tr>
+					<td><label for="lname">Last Name</label></td>
+					<td><input type="text" name="lname" id="lname" placeholder="Last Name" required></td>
+				</tr>
+				<tr>
+					<td><label for="addr1">Mail Address1</label></td>
+					<td><input type="text" name="addr1" id="addr1" required></td>
+				</tr>
+				<tr>
+					<td><label for="addr2">Mail Address2</label></td>
+					<td><input type="text" name="addr2" id="addr2" required></td>
+				</tr>
+				<tr>
+					<td><label for="city">City</label></td>
+					<td><input type="text" name="city" id="city" required></td>
+				</tr>
+				<tr>
+					<td><label for="state">State</label></td>
+					<td>
+						<select name="state" id="state" required>
+							<option value="guj" selected>Gujarat</option>
+							<option value="del">Delhi</option>
+							<option value="utk">Uttarakhand</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="zipcode">Zip</label></td>
+					<td><input type="text" name="zipcode" id="zipcode" required></td>
+				</tr>
+				<tr>
+					<td><label for="photo">Upload Photo</label></td>
+					<td>
+						<input type="file" name="photo" id="photo" required>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input type="email" name="email" id="email" required></td>
+				</tr>
+				<tr>
+					<td><label for="mobile">Mobile</label></td>
+					<td><input type="text" name="mobile" id="mobile" placeholder="+91" required></td>
+				</tr>
+				<tr>
+					<td><label for="languages">Languages Known</label></td>
+					<td>
+						<input type="checkbox" name="languages" id="langguj" value="guj" checked>
+						<label for="langguj">Gujarati</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" name="languages" id="langhin" value="hin" checked>
+						<label for="langhin">Hindi</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" name="languages" id="langeng" value="eng" checked>
+						<label for="langeng">English</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" name="languages" id="langmar" value="mar">
+						<label for="langmar">Marathi</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="addn">Additional Information</label></td>
+					<td>
+						<textarea name="addn" id="addn" placeholder="Optional"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="Submit">
+						<input type="reset" name="reset" value="Reset">
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>

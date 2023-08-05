@@ -1,0 +1,67 @@
+.container {
+	width: 80%;
+	background-color: beige;
+	margin: auto;
+	border: 5px ridge rgb(169, 110, 110);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+table {
+	padding: 5px;
+}
+
+.label {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: large;
+	line-height: 2rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="number"] {
+	height: 20px;
+	width: 200px;
+	border: 2px;
+	border-style: ridge;
+	margin: 5px;
+}
+
+select {
+	height: 20px;
+	width: 207px;
+	border: 2px;
+	border-style: ridge;
+	margin: 5px;
+}
+
+textarea {
+	margin: 5px;
+	width: 201px;
+}
+
+.submit {
+	text-align: center;
+}
+
+.submitbutton {
+	width: 200px;
+	height: 40px;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: black;
+	background-color: rgb(255, 236, 67);
+	font-size: 20px;
+	margin: 10px;
+}
